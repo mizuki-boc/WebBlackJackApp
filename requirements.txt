@@ -13,6 +13,7 @@ decorator==4.4.2
 docutils==0.16
 Flask==1.1.1
 future==0.18.2
+gunicorn==20.0.4
 httplib2==0.17.0
 idna==2.9
 ipython==7.16.1
