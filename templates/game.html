@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJackApp</title>
+    <script text="text/javascript" src="/static/js/game.js"></script>
+</head>
+<body>
+    <div>ようこそ、{{ user_name }} さん！</div>
+    <div>{{ new_user_message }}</div>
+    <div id="bankroll"></div>
+    <div id="pop_message"></div>
+    <div id="bet_form_container">
+        <div>ベット額を選択してください</div>
+        <button id="100" onclick="select_bet_amount(this)">100</button>
+        <button id="200" onclick="select_bet_amount(this)">200</button>
+    </div>
+    <div id="game_main_container" style="display: none;">
+        <div id="bet_amount"></div>
+        <button onclick="action(this)" id="hit">ヒット</button>
+        <button onclick="action(this)" id="stand">スタンド</button>
+        <button onclick="action(this)" id="double">ダブルダウン</button>
+        <button onclick="action(this)" id="surrender">サレンダー</button>
+        <button onclick="action(this)" id="yes">はい</button>
+        <button onclick="action(this)" id="no">いいえ</button>
+        <div>ディーラーのハンド</div>
+        <div id="dealer_hand"></div>
+        <div>プレイヤーのハンド</div>
+        <div id="player_hand"></div>
+        <div>結果</div>
+        <div id="result"></div>
+        <button onclick="action(this)" id="to_next_game">次のゲームへ</button>
+    </div>
+    <button onclick="exitGame()">ゲーム終了</button>
+</body>
+</html>
