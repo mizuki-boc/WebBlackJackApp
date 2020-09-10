@@ -640,7 +640,7 @@ if __name__ == "__main__":
 
     app.debug = options.debug
     host = options.host
-    port = ptions.port
+    port = otions.port
 
     host_port = (host, port)
     server = WSGIServer(
