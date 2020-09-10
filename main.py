@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def top():
-    return "hello, world!"
+    return "どもども"
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
