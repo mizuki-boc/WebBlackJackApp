@@ -642,6 +642,8 @@ if __name__ == "__main__":
     host = options.host
     port = options.port
 
+    print(host, port)
+
     host_port = (host, port)
     server = WSGIServer(
         host_port,
