@@ -1,5 +1,5 @@
 //WebSocket接続
-var connection = new WebSocket("ws://localhost:8888/pipe");
+var connection = new WebSocket("ws://test-web-app-mizuki0842.herokuapp.com:8888/pipe");
 
 // サーバからメッセージを受け取った時の処理
 connection.onmessage = function (event) {
