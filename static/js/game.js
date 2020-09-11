@@ -1,7 +1,7 @@
 //WebSocket接続
 var port = String(location.port)
 var uri = "test-web-app-mizuki0842.herokuapp.com"
-var url = "ws://" + uri + ":" + port + "/pipe"
+var url = "wss://" + uri + ":" + port + "/pipe"
 var connection = new WebSocket(url);
 
 // サーバからメッセージを受け取った時の処理
