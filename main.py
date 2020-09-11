@@ -640,8 +640,8 @@ if __name__ == "__main__":
 
     app.debug = options.debug
     host = options.host
-    # port = options.port
-    port = 8888
+    port = options.port
+    # port = 8888
 
     print(host, port)
 
